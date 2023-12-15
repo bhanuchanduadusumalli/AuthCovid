@@ -9,16 +9,16 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3000/states/
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzAyNjE5ODgzfQ.PvQe7tCGuHQ8VAkgkVVXVfIIKWH6udL_Y9wqebQDjTs
 
 
 ###
 GET http://localhost:3000/states/3/
-Authorization: Bearer
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzAyNjE5ODgzfQ.PvQe7tCGuHQ8VAkgkVVXVfIIKWH6udL_Y9wqebQDjTs
 
 ###
 POST http://localhost:3000/districts/
-Authorization: Bearer
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzAyNjE5ODgzfQ.PvQe7tCGuHQ8VAkgkVVXVfIIKWH6udL_Y9wqebQDjTs
 Content-Type: application/json
 
 {
@@ -33,17 +33,17 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3000/districts/8/ 
-Authorization: Bearer
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzAyNjE5ODgzfQ.PvQe7tCGuHQ8VAkgkVVXVfIIKWH6udL_Y9wqebQDjTs
 
 
 ###
 DELETE http://localhost:3000/districts/3/ 
-Authorization: Bearer
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzAyNjE5ODgzfQ.PvQe7tCGuHQ8VAkgkVVXVfIIKWH6udL_Y9wqebQDjTs
 
 
 ###
 PUT http://localhost:3000/districts/3/
-Authorization: Bearer
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzAyNjE5ODgzfQ.PvQe7tCGuHQ8VAkgkVVXVfIIKWH6udL_Y9wqebQDjTs
 Content-Type: application/json
 
 {
@@ -58,9 +58,9 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3000/states/3/stats/
-Authorization: Bearer
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzAyNjE5ODgzfQ.PvQe7tCGuHQ8VAkgkVVXVfIIKWH6udL_Y9wqebQDjTs
 
 
 ###
 GET http://localhost:3000/districts/4/details/
-Authorization: Bearer
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzAyNjE5ODgzfQ.PvQe7tCGuHQ8VAkgkVVXVfIIKWH6udL_Y9wqebQDjTs

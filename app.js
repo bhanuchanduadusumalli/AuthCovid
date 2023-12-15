@@ -54,21 +54,23 @@ const convertstateNameDbObjToStatenameResponseObj = (name) => {
 const authenticateToken = (request, response, next) => {
   let jwtToken;
   const authHeader = request.headers["authorization"];
+  if (authHeader !== undefined) {
+    jwtToken = authHeader.split(" ")[1];
+  }
+
   if (authHeader === undefined) {
     response.status(401);
     response.send("Invalid JWT Token");
   } else {
-    jwtToken = authHeader.split(" ")[1];
+    jwt.verify(jwtToken, "bhanu", async (error, payload) => {
+      if (error) {
+        response.status(401);
+        response.send("Invalid JWT Token");
+      } else {
+        next();
+      }
+    });
   }
-
-  jwt.verify(jwtToken, "bhanu", async (error, payload) => {
-    if (error) {
-      response.status(401);
-      response.send("Invalid JWT Token");
-    } else {
-      next();
-    }
-  });
 };
 
 //Post request
